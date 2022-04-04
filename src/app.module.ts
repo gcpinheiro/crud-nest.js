@@ -9,7 +9,7 @@ import { MongooseModule } from '@nestjs/mongoose';
   imports: [
     UsersModule,
     MongooseModule.forRoot(
-      'mongodb+srv://nestCrud:<nestCrud>@nestcrud.n96fl.mongodb.net/test',
+      'mongodb+srv://nestCrud:<nestCrud>@nestcrud.n96fl.mongodb.net/myFirstDatabase?retryWrites=true&w=majority',
     ),
   ],
   controllers: [AppController],
